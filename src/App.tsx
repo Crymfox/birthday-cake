@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import Cake from "./components/Cake.js"
 import Candle from "./components/Candle.js"
 import { useEffect, useState } from "react"
+import useKey from "./hooks/useKey.js"
 
 function App() {
 
@@ -89,6 +90,14 @@ function App() {
       setCandles(newCandles)
     }
   }, [blowOut, candles])
+
+  useKey("Space", () => {
+    const newCandles = [...candles]
+    newCandles.forEach((candle) => {
+      candle.out = false
+    })
+    setCandles(newCandles)
+  })
 
   return (
     <div className="bg-gradient-to-br from-green-900 via-yellow-900 to-red-900 relative min-h-screen min-w-screen">
