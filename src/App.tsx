@@ -91,7 +91,7 @@ function App() {
   }, [blowOut, candles])
 
   return (
-    <div className="bg-gradient-to-br from-green-900 via-yellow-900 to-red-900 relative">
+    <div className="bg-gradient-to-br from-green-900 via-yellow-900 to-red-900 relative min-h-screen min-w-screen">
       <AnimatePresence>
       {
         candles.map((candle, i) => (
