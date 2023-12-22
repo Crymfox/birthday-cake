@@ -91,12 +91,18 @@ function App() {
     }
   }, [blowOut, candles])
 
-  useKey("Space", () => {
+  const flameAll = () => {
     const newCandles = [...candles]
     newCandles.forEach((candle) => {
       candle.out = false
     })
     setCandles(newCandles)
+  }
+
+  useKey("Space", flameAll)
+  useKey("Enter", flameAll)
+  useKey("Escape", () => {
+    setCandles([])
   })
 
   return (
