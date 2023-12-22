@@ -27,7 +27,7 @@ const Cake: React.FC<{addCandle: (e: React.MouseEvent<SVGSVGElement, MouseEvent>
     }, [])
 
     return (
-        <div className="flex flex-col justify-center items-center h-screen relative">
+        <div className="flex flex-col justify-center items-center min-h-screen lg:scale-100 md:scale-75 scale-50 relative">
             <svg onClick={(e: React.MouseEvent<SVGSVGElement, MouseEvent>) => addCandle(e)} className="w-[365px] h-[365px] rounded-full skew-y-[50deg] -rotate-[60.5deg] absolute z-[11] hover:cursor-pointer"></svg>
             <div className="w-96 h-96 bg-amber-950 rounded-full skew-y-[50deg] -rotate-[60.5deg] absolute border-4 border-amber-950 z-[10]">
                 <div className='w-full h-full'>
