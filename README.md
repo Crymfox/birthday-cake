@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Interactive Birthday Cake
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Interactive Birthday Cake project! This project demonstrates creative front-end logic using React to simulate a birthday cake with dynamic decorations and interactive candles.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dynamic Cake Decorations:** Little circles (cake decorations) are randomly distributed on the cake's surface every time the page is refreshed.
+- **Interactive Candles:** 
+  - Click on the cake's surface to drop a candle at the clicked position with a smooth animation using [Framer Motion](https://www.framer.com/motion/).
+  - Blow on your laptop's microphone to simulate blowing out the candles.
+  - Click on the candle flame to toggle its status (on fire or not).
+  - Click on the candle body to remove it from the cake.
 
-## Expanding the ESLint configuration
+## Key Binds
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Space/Enter:** Set all candles aflame.
+- **Escape:** Remove all candles from the cake.
 
-- Configure the top-level `parserOptions` property like this:
+## Technology Stack
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **React**
+- **Framer Motion**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contact
+For any questions or feedback, please contact me. Enjoy!
